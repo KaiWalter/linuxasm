@@ -1,12 +1,10 @@
 # ----------------------------------------------------------------------------------------
+# source: https://cs.lmu.edu/~ray/notes/gasexamples/
+#
 # Writes "Hello, World" to the console using only system calls. Runs on 64-bit Linux only.
 # To assemble and run:
 #
 #     gcc -c hello.s && ld -o hello hello.o && ./hello
-#
-# or
-#
-#     gcc -nostdlib hello.s && ./a.out
 # ----------------------------------------------------------------------------------------
 
         .global _start
