@@ -7,12 +7,14 @@ section .text
     global  _start
 
 _start:
-    mov rax,1
-    mov rdi,1
-    mov rsi,text
-    mov rdx,15
+#   sys_write(1,text,15)
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, text
+    mov rdx, 15
     syscall
 
-    mov rax,60
-    mov rdi,0
+#   sys_exit(0)
+    mov rax, 60
+    mov rdi, 0
     syscall
