@@ -1,0 +1,9 @@
+     1                                  section .text
+     2                                      global  _start
+     3                                  
+     4                                  _start:
+     5                                  #   sys_exit(0)
+     1 00000000 B83C000000                  mov eax, 60
+     2 00000005 BF00000000                  mov edi, 0
+     3 0000000A 0F05                        syscall
+     4                                  
