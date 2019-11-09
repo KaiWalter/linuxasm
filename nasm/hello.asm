@@ -1,7 +1,7 @@
 # nasm -f elf64 -o hello.o hello.asm && ld hello.o -o hello
 
 section .data
-    text db "Hello, world",10,10
+    text db "Hello, world!",10,10
 
 section .text
     global  _start
@@ -11,7 +11,7 @@ _start:
     mov rax, 1
     mov rdi, 1
     mov rsi, text
-    mov rdx, 15
+    mov rdx, 16
     syscall
 
 #   sys_exit(0)
